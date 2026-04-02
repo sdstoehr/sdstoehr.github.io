@@ -239,6 +239,8 @@ a { color: inherit; text-decoration: none; }
   aspect-ratio: 3/4;
   border-radius: 1rem;
   border: 1px solid rgba(28,36,56,.25);
+  border-color:
+          color-mix(in oklab, var(--outline-variant) 25%, transparent);
   overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
 }
@@ -345,6 +347,12 @@ a { color: inherit; text-decoration: none; }
   display: inline-flex;
   align-items: center;
   gap: .25rem;
+}
+.repo-card--archived {
+  opacity: 0.75;
+}
+.repo-card--archived .repo-name {
+  color: var(--on-surface-variant);
 }
 .lang-dot {
   width: 10px;
